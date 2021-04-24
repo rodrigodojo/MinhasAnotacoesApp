@@ -7,8 +7,10 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="140dp"
+        android:gravity="center"
         android:theme="@style/Theme.MinhasAnotações.AppBarOverlay" />
 
     <include layout="@layout/content_main" />
@@ -19,6 +21,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_confirmar_done" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
