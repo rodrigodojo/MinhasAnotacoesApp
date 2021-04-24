@@ -11,7 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:gravity="center"
-        android:theme="@style/Theme.MinhasAnotações.AppBarOverlay" />
+        android:theme="@style/Theme.MinhasAnotações.AppBarOverlay" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:visibility="visible" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main" />
 
@@ -23,14 +31,5 @@
         android:layout_margin="@dimen/fab_margin"
         app:fabSize="normal"
         app:srcCompat="@drawable/ic_confirmar_done" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="visible"
-        app:layout_anchor="@+id/appBarLayout"
-        app:layout_anchorGravity="center"
-        app:srcCompat="@drawable/logo" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
